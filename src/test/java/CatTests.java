@@ -25,15 +25,15 @@ public class CatTests {
     }
 
     @Test
-    public void checkGetSound() {
+    public void checkGetSoundTest() {
         String expectedSound = "Мяу";
         String actualSound = cat.getSound();
         assertEquals(expectedSound, actualSound, String.format("Expected '%s' sound, actually was '%s'", expectedSound, actualSound));
     }
 
     @Test
-    public void checkGetFoodReturnsValueFromPredator() {
-        List<String> expectedFood = List.of("Мясо", "Рыба");
+    public void checkGetFoodReturnsValueFromPredatorTest() {
+        List<String> expectedFood = List.of("Животные", "Птицы", "Рыба");
         try {
             Mockito.when(feline.eatMeat()).thenReturn(expectedFood);
             List<String> actualFood = cat.getFood();

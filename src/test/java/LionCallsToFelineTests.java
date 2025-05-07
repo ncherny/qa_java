@@ -28,7 +28,7 @@ public class LionCallsToFelineTests {
     }
 
     @Test
-    public void checkGetKittensReturnsValueFromFeline() {
+    public void checkGetKittensReturnsValueFromFelineTest() {
         int expectedKittens = 1;
         Mockito.when(feline.getKittens()).thenReturn(expectedKittens);
         int actualKittens = lion.getKittens();
@@ -38,7 +38,7 @@ public class LionCallsToFelineTests {
     }
 
     @Test
-    public void checkGetFoodReturnsValueFromFeline() {
+    public void checkGetFoodReturnsValueFromFelineTest() {
         try {
             List<String> expectedFood = List.of("Животные", "Птицы", "Рыба");
             Mockito.when(feline.getFood("Хищник")).thenReturn(expectedFood);

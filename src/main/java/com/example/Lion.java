@@ -6,10 +6,10 @@ public class Lion {
 
     boolean hasMane;
 
-    FelineInterface feline;
+    Feline feline;
 
-    public Lion(String sex, FelineInterface felineInterface) throws Exception {
-        this.feline = felineInterface;
+    public Lion(String sex, Feline feline) throws Exception {
+        this.feline = feline;
 
         if ("Самец".equals(sex)) {
             hasMane = true;
